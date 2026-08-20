@@ -109,7 +109,7 @@ export default function AboutPage() {
                   {/* Bottom Image (Glass Effect) */}
                   <div className="absolute bottom-0 left-0 w-[60%] h-[60%] rounded-[2rem] overflow-hidden shadow-2xl z-30 group backdrop-blur-md border border-white/50 bg-white/20 p-2 transform -translate-y-10 translate-x-10">
                     <div className="relative w-full h-full rounded-[1.5rem] overflow-hidden">
-                       <Image src="/images/hero_3.png" alt="Engineering Team" fill className="object-cover transform group-hover:scale-110 transition-transform duration-1000" />
+                       <Image src="/images/image.png" alt="Engineering Team" fill className="object-cover transform group-hover:scale-110 transition-transform duration-1000" />
                     </div>
                   </div>
                 </div>
@@ -221,7 +221,7 @@ export default function AboutPage() {
 
       {/* Mini CTA block at the very bottom */}
       <section className="bg-brand-dark py-20 relative overflow-hidden border-t border-white/10">
-        <div className="absolute inset-0 bg-[url('/images/hero_3.png')] bg-cover bg-center opacity-[0.05]" />
+        <div className="absolute inset-0 bg-[url('/images/image.png')] bg-cover bg-center opacity-[0.05]" />
         <div className="container mx-auto px-4 relative z-10 text-center flex flex-col md:flex-row items-center justify-between gap-8">
           <AnimatedReveal direction="right">
             <h2 className="text-3xl md:text-4xl font-heading font-black text-white text-left">

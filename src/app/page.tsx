@@ -8,32 +8,39 @@ import { HeroVideo } from "@/components/HeroVideo";
 
 const services = [
   {
-    title: "Civil Construction",
-    description: "Residential, commercial, and infrastructure construction with uncompromising quality.",
-    icon: Building2,
-    href: "/services/civil-construction",
-    image: "/images/hero_1.png"
+    title: "Manpower Supply",
+    description: "Providing a reliable, skilled, and unskilled workforce tailored for your specific project needs.",
+    icon: Users,
+    href: "/services/manpower-supply",
+    image: "/images/manpower_supply_hero.jpg"
   },
   {
-    title: "Electro-Mechanical Works",
-    description: "Expert MEP installation, HVAC systems, and comprehensive maintenance solutions.",
+    title: "Equipment Rental",
+    description: "Extensive fleet of heavy machinery and construction equipment available for short and long-term rental.",
+    icon: Factory,
+    href: "/services/equipment-rental",
+    image: "/images/equipment_rental_hero.jpg"
+  },
+  {
+    title: "Industrial Support",
+    description: "Comprehensive support for industrial operations including maintenance and logistical support.",
     icon: Wrench,
-    href: "/services/electro-mechanical-works",
-    image: "/images/hero_3.png"
+    href: "/services/industrial-support-services",
+    image: "/images/industrial_support_hero.jpg"
   },
   {
-    title: "General Trading",
-    description: "Supply of premium building materials, heavy equipment, and industrial products.",
+    title: "Trading & Projects",
+    description: "Reliable supply chain management and procurement of essential project materials.",
     icon: Truck,
-    href: "/services/general-trading",
-    image: "/images/hero_4.png"
+    href: "/services/trading-and-project-solutions",
+    image: "/images/trading_solutions_hero.jpg"
   },
   {
-    title: "Project Management",
-    description: "End-to-end planning, supervision, and quality control for complex projects.",
-    icon: HardHat,
-    href: "/services/project-management",
-    image: "/images/hero_5.png"
+    title: "Portacabin & AV",
+    description: "High-quality temporary facilities and audio-visual setups for sites and events.",
+    icon: Building2,
+    href: "/services/portacabin-and-av-solutions",
+    image: "/images/portacabin_av_hero.jpg"
   }
 ];
 
@@ -47,10 +54,9 @@ export default function Home() {
 
 
    {/* Stats Section */}
-      <section className="relative z-30 -mt-24 md:-mt-32 mb-16 lg:mb-24 px-1 md:px-4">
+      {/* <section className="relative z-30 -mt-24 md:-mt-32 mb-16 lg:mb-24 px-1 md:px-4">
         <div className="container mx-auto">
           <div className="bg-brand-dark/70 backdrop-blur-3xl border border-white/10 rounded-2xl md:rounded-[2.5rem] p-4 md:p-8 lg:p-12 shadow-[0_30px_80px_-15px_rgba(0,0,0,0.5)] relative overflow-hidden">
-            {/* Elegant glowing background layer */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%] bg-gradient-to-r from-brand-orange/20 to-brand-gold/20 rounded-full blur-[120px] pointer-events-none" />
             
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 relative z-10">
@@ -69,7 +75,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
       {/* About Preview */}
@@ -92,7 +98,7 @@ export default function Home() {
                   {/* Image Container */}
                   <div className="relative aspect-[4/5] w-full max-w-md mx-auto lg:max-w-none overflow-hidden rounded-[2.5rem] shadow-2xl">
                     <Image
-                      src="/images/hero_3.png"
+                      src="/images/image.png"
                       alt="Our Team at Work"
                       fill
                       className="object-cover transform group-hover:scale-105 transition-transform duration-1000"

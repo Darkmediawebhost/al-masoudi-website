@@ -16,11 +16,11 @@ const navLinks = [
     href: "/services",
     hasDropdown: true,
     dropdownItems: [
-      { name: "Civil Construction", href: "/services/civil-construction", image: "/images/hero_1.png" },
-      { name: "Electro-Mechanical Works", href: "/services/electro-mechanical-works", image: "/images/hero_2.png" },
-      { name: "Interior Fit-Out", href: "/services/interior-fit-out", image: "/images/hero_4.png" },
-      { name: "Road & Infrastructure", href: "/services/road-and-infrastructure", image: "/images/hero_5.png" },
-      { name: "General Trading", href: "/services/general-trading", image: "/images/hero_6.png" },
+      { name: "Manpower Supply", href: "/services/manpower-supply", image: "/images/manpower_supply_hero.jpg" },
+      { name: "Equipment Rental", href: "/services/equipment-rental", image: "/images/equipment_rental_hero.jpg" },
+      { name: "Industrial Support Services", href: "/services/industrial-support-services", image: "/images/industrial_support_hero.jpg" },
+      { name: "Trading and Project Solutions", href: "/services/trading-and-project-solutions", image: "/images/trading_solutions_hero.jpg" },
+      { name: "Portacabin & AV Solutions", href: "/services/portacabin-and-av-solutions", image: "/images/portacabin_av_hero.jpg" },
     ]
   },
   { name: "Why Us", href: "/why-us" },

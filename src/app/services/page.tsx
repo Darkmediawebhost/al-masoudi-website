@@ -1,50 +1,43 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Building2, Wrench, Factory, Truck, HardHat, Droplets, PaintRoller } from "lucide-react";
+import { ArrowRight, Building2, Wrench, Factory, Truck, HardHat, Droplets, PaintRoller, Users, MonitorPlay } from "lucide-react";
 import { AnimatedReveal } from "@/components/AnimatedReveal";
 
 const services = [
   {
-    title: "Civil Construction & Building Works",
-    description: "End-to-end residential, commercial, and infrastructure construction services.",
-    icon: Building2,
-    slug: "civil-construction",
-    image: "/images/hero_1.png"
+    title: "Manpower Supply",
+    description: "Providing a reliable and qualified workforce tailored to your operational needs.",
+    icon: Users,
+    slug: "manpower-supply",
+    image: "/images/manpower_supply_hero.jpg"
   },
   {
-    title: "Electro-Mechanical / MEP Works",
-    description: "Expert mechanical, electrical, plumbing, and HVAC installation and maintenance.",
-    icon: Wrench,
-    slug: "electro-mechanical-works",
-    image: "/images/hero_2.png"
-  },
-  {
-    title: "Interior Fit-Out & Finishing",
-    description: "Premium interior design execution, finishing works, and bespoke joinery.",
-    icon: PaintRoller,
-    slug: "interior-fit-out",
-    image: "/images/hero_4.png"
-  },
-  {
-    title: "Road & Infrastructure Works",
-    description: "Comprehensive earthworks, road construction, and utility network development.",
+    title: "Equipment Rental",
+    description: "High-quality heavy machinery and tools available for flexible rental periods.",
     icon: Factory,
-    slug: "road-and-infrastructure",
-    image: "/images/hero_5.png"
+    slug: "equipment-rental",
+    image: "/images/equipment_rental_hero.jpg"
   },
   {
-    title: "General Trading",
-    description: "Reliable supply of building materials, heavy equipment, and industrial products.",
+    title: "Industrial Support Services",
+    description: "End-to-end maintenance and support services for industrial and commercial facilities.",
+    icon: Wrench,
+    slug: "industrial-support-services",
+    image: "/images/industrial_support_hero.jpg"
+  },
+  {
+    title: "Trading and Project Solutions",
+    description: "Procurement, material supply, and comprehensive project logistical support.",
     icon: Truck,
-    slug: "general-trading",
-    image: "/images/hero_6.png"
+    slug: "trading-and-project-solutions",
+    image: "/images/trading_solutions_hero.jpg"
   },
   {
-    title: "Project Management & Consultancy",
-    description: "Professional planning, supervision, and rigorous quality control for complex projects.",
-    icon: HardHat,
-    slug: "project-management",
-    image: "/images/hero_3.png"
+    title: "Portacabin & AV Solutions",
+    description: "Temporary site facilities, portacabins, and complete audio-visual setups.",
+    icon: MonitorPlay,
+    slug: "portacabin-and-av-solutions",
+    image: "/images/portacabin_av_hero.jpg"
   }
 ];
 

@@ -65,11 +65,11 @@ export function Footer() {
             </h4>
             <ul className="space-y-3">
               {[
-                'Civil Construction',
-                'Electro-Mechanical / MEP',
-                'Interior Fit-Out',
-                'Road & Infrastructure',
-                'General Trading',
+                'Manpower Supply',
+                'Equipment Rental',
+                'Industrial Support Services',
+                'Trading and Project Solutions',
+                'Portacabin and AV Solutions',
               ].map((service) => (
                 <li key={service}>
                   <Link

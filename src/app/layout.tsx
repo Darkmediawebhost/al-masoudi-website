@@ -36,8 +36,9 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${inter.variable} ${sora.variable} h-full antialiased scroll-smooth`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col pt-0">
+      <body className="min-h-full flex flex-col pt-0" suppressHydrationWarning>
         <Navbar />
         <div className="flex-1">
           {children}
