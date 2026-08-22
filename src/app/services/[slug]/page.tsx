@@ -75,21 +75,38 @@ const serviceData: Record<string, any> = {
       { step: "Quality Assurance", desc: "Conducting rigorous inspections to verify that all materials meet strict international standards." }
     ]
   },
-  "portacabin-and-av-solutions": {
-    title: "Premium Portacabin & Audio-Visual (AV) Solutions",
+  "portacabin": {
+    title: "Premium Portacabin Solutions",
     image: "/images/portacabin_av_hero.jpg",
-    overview: "Al Masoudi Contracting & Trading delivers state-of-the-art modular portacabins and fully integrated audio-visual solutions designed for modern construction sites and corporate events. We provide premium, custom-built temporary facilities—including site offices and accommodations—equipped with cutting-edge AV technology to ensure your team remains connected, productive, and comfortable in any environment.",
+    overview: "Al Masoudi Contracting & Trading delivers state-of-the-art modular portacabins designed for modern construction sites and temporary accommodations. We provide premium, custom-built temporary facilities—including site offices and accommodations—to ensure your team remains productive and comfortable in any environment.",
     capabilities: [
       "Custom Modular Portacabins & Site Office Design",
-      "Temporary Workforce Accommodations & Mobile Units",
-      "Professional Audio-Visual (AV) Systems Integration",
-      "High-Tech Conferencing Equipment & Presentation Setups"
+      "Temporary Workforce Accommodations",
+      "Mobile Medical & Security Units",
+      "Rapid Deployment Facilities"
     ],
     process: [
-      { step: "Design & Consultation", desc: "Collaborating with you to customize cabin layouts and define precise AV requirements." },
+      { step: "Design & Consultation", desc: "Collaborating with you to customize cabin layouts and define requirements." },
       { step: "Precision Fabrication", desc: "Constructing high-quality, durable modular units to your exact specifications." },
-      { step: "Seamless Installation", desc: "Safe, efficient on-site setup, including full wiring and AV systems integration." },
-      { step: "Ongoing Maintenance", desc: "Providing dedicated technical support and servicing to keep all facilities and tech running smoothly." }
+      { step: "Seamless Installation", desc: "Safe, efficient on-site setup and utility connection." },
+      { step: "Ongoing Maintenance", desc: "Providing dedicated technical support and servicing to keep facilities running smoothly." }
+    ]
+  },
+  "av-solutions": {
+    title: "Professional Audio-Visual (AV) Solutions",
+    image: "/images/av_solutions_hero.jpg",
+    overview: "We offer fully integrated audio-visual solutions designed for modern corporate environments, events, and command centers. Equipped with cutting-edge AV technology, we ensure your team remains connected, productive, and equipped for high-tech conferencing and presentations.",
+    capabilities: [
+      "Professional Audio-Visual (AV) Systems Integration",
+      "High-Tech Conferencing Equipment",
+      "Interactive Displays & Presentation Setups",
+      "Control Room & Command Center AV"
+    ],
+    process: [
+      { step: "Needs Assessment", desc: "Evaluating your space and technical requirements for the perfect AV setup." },
+      { step: "System Design", desc: "Engineering customized AV solutions with top-tier equipment." },
+      { step: "Expert Installation", desc: "Seamless integration, wiring, and configuration by certified technicians." },
+      { step: "Training & Support", desc: "User training and continuous technical support for flawless operation." }
     ]
   },
   // Fallback for other routes for demonstration
@@ -212,7 +229,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                   <div className="mt-8 pt-8 border-t border-white/10">
                     <h4 className="font-heading font-semibold mb-4">Other Services</h4>
                     <ul className="space-y-3">
-                      {["Manpower Supply", "Equipment Rental", "Industrial Support Services", "Trading and Project Solutions", "Portacabin and AV Solutions"].map(s => (
+                      {["Manpower Supply", "Equipment Rental", "Industrial Support Services", "Trading and Project Solutions", "Portacabin", "AV Solutions"].map(s => (
                         <li key={s}>
                           <Link href={`/services/${s.toLowerCase().replace(/ /g, '-')}`} className="text-gray-400 hover:text-brand-orange transition-colors text-sm flex items-center gap-2">
                             <span className="w-1 h-1 bg-brand-orange rounded-full" /> {s}

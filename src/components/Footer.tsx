@@ -69,7 +69,8 @@ export function Footer() {
                 'Equipment Rental',
                 'Industrial Support Services',
                 'Trading and Project Solutions',
-                'Portacabin and AV Solutions',
+                'Portacabin',
+                'AV Solutions',
               ].map((service) => (
                 <li key={service}>
                   <Link

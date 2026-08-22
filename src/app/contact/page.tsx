@@ -8,15 +8,28 @@ import { Button } from "@/components/ui/button";
 export default function ContactPage() {
   const [formStatus, setFormStatus] = useState<"idle" | "submitting" | "success">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormStatus("submitting");
-    // Simulate API call
-    setTimeout(() => {
-      setFormStatus("success");
-      // Reset form after showing success message
-      setTimeout(() => setFormStatus("idle"), 3000);
-    }, 1500);
+    
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const phone = formData.get('phone');
+    const subject = formData.get('subject');
+    const message = formData.get('message');
+
+    const text = `*New Contact Inquiry*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Phone:* ${phone}%0A*Subject:* ${subject}%0A*Message:* ${message}`;
+    
+    // WhatsApp Number (without plus)
+    const whatsappNumber = "966590470783";
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${text}`;
+    
+    window.open(whatsappUrl, '_blank');
+    
+    setFormStatus("success");
+    e.currentTarget.reset();
+    setTimeout(() => setFormStatus("idle"), 3000);
   };
 
   return (
@@ -127,8 +140,9 @@ export default function ContactPage() {
                       <input 
                         type="text" 
                         id="name" 
+                        name="name"
                         required 
-                        className="w-full px-4 py-3 bg-brand-light/50 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 bg-brand-light/50 border border-gray-200 rounded-md text-brand-dark focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all"
                         placeholder="John Doe"
                       />
                     </div>
@@ -137,8 +151,9 @@ export default function ContactPage() {
                       <input 
                         type="email" 
                         id="email" 
+                        name="email"
                         required 
-                        className="w-full px-4 py-3 bg-brand-light/50 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 bg-brand-light/50 border border-gray-200 rounded-md text-brand-dark focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all"
                         placeholder="john@example.com"
                       />
                     </div>
@@ -150,7 +165,8 @@ export default function ContactPage() {
                       <input 
                         type="tel" 
                         id="phone" 
-                        className="w-full px-4 py-3 bg-brand-light/50 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all"
+                        name="phone"
+                        className="w-full px-4 py-3 bg-brand-light/50 border border-gray-200 rounded-md text-brand-dark focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all"
                         placeholder="+1 (234) 567-8900"
                       />
                     </div>
@@ -159,8 +175,9 @@ export default function ContactPage() {
                       <input 
                         type="text" 
                         id="subject" 
+                        name="subject"
                         required 
-                        className="w-full px-4 py-3 bg-brand-light/50 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 bg-brand-light/50 border border-gray-200 rounded-md text-brand-dark focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all"
                         placeholder="Project Inquiry"
                       />
                     </div>
@@ -170,9 +187,10 @@ export default function ContactPage() {
                     <label htmlFor="message" className="text-sm font-semibold text-brand-dark">Message</label>
                     <textarea 
                       id="message" 
+                      name="message"
                       required 
                       rows={5}
-                      className="w-full px-4 py-3 bg-brand-light/50 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all resize-none"
+                      className="w-full px-4 py-3 bg-brand-light/50 border border-gray-200 rounded-md text-brand-dark focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all resize-none"
                       placeholder="Tell us about your project..."
                     ></textarea>
                   </div>

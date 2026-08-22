@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, HardHat, Building2, Wrench, Factory, Truck, Calendar, Users, Globe, Award } from "lucide-react";
+import { ArrowRight, CheckCircle2, HardHat, Building2, Wrench, Factory, Truck, Calendar, Users, Globe, Award, MonitorPlay } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AnimatedReveal } from "@/components/AnimatedReveal";
 import { StatsCounter } from "@/components/StatsCounter";
@@ -36,11 +36,18 @@ const services = [
     image: "/images/trading_solutions_hero.jpg"
   },
   {
-    title: "Portacabin & AV",
-    description: "High-quality temporary facilities and audio-visual setups for sites and events.",
+    title: "Portacabin",
+    description: "High-quality temporary facilities and site offices.",
     icon: Building2,
-    href: "/services/portacabin-and-av-solutions",
+    href: "/services/portacabin",
     image: "/images/portacabin_av_hero.jpg"
+  },
+  {
+    title: "AV Solutions",
+    description: "Professional audio-visual setups for sites and events.",
+    icon: MonitorPlay,
+    href: "/services/av-solutions",
+    image: "/images/av_solutions_hero.jpg"
   }
 ];
 
@@ -107,15 +114,18 @@ export default function Home() {
                   </div>
                   
                   {/* Floating Badge overlay */}
-                  <div className="absolute -left-6 bottom-24 bg-white p-5 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-4 hover:-translate-y-2 transition-transform duration-500 cursor-default">
-                    <div className="w-12 h-12 rounded-full bg-brand-orange/10 flex items-center justify-center text-brand-orange">
-                      <Award size={24} />
+                  {/* <div className="absolute -left-8 bottom-24 bg-white/95 backdrop-blur-md p-4 pr-6 rounded-2xl shadow-2xl border border-brand-orange/20 flex items-center gap-4 hover:-translate-y-2 transition-all duration-500 cursor-default group z-20">
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-brand-orange rounded-full blur-md opacity-40 group-hover:opacity-60 transition-opacity duration-500" />
+                      <div className="relative w-12 h-12 rounded-full bg-gradient-to-br from-brand-orange to-brand-orange/80 flex items-center justify-center text-white shadow-lg">
+                        <Award size={24} />
+                      </div>
                     </div>
                     <div>
-                      <div className="text-2xl font-black text-brand-dark">25+</div>
-                      <div className="text-xs font-bold text-brand-gray uppercase tracking-wider">Years Exp</div>
+                      <div className="text-xl font-black text-brand-dark">Award</div>
+                      <div className="text-xs font-bold text-brand-orange uppercase tracking-widest">Winning</div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </AnimatedReveal>
             </div>

@@ -33,11 +33,18 @@ const services = [
     image: "/images/trading_solutions_hero.jpg"
   },
   {
-    title: "Portacabin & AV Solutions",
-    description: "Temporary site facilities, portacabins, and complete audio-visual setups.",
-    icon: MonitorPlay,
-    slug: "portacabin-and-av-solutions",
+    title: "Portacabin",
+    description: "Temporary site facilities, portacabins, and mobile units.",
+    icon: Building2,
+    slug: "portacabin",
     image: "/images/portacabin_av_hero.jpg"
+  },
+  {
+    title: "AV Solutions",
+    description: "Complete professional audio-visual setups and integrations.",
+    icon: MonitorPlay,
+    slug: "av-solutions",
+    image: "/images/av_solutions_hero.jpg"
   }
 ];
 

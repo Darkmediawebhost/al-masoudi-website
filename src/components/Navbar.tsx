@@ -20,7 +20,8 @@ const navLinks = [
       { name: "Equipment Rental", href: "/services/equipment-rental", image: "/images/equipment_rental_hero.jpg" },
       { name: "Industrial Support Services", href: "/services/industrial-support-services", image: "/images/industrial_support_hero.jpg" },
       { name: "Trading and Project Solutions", href: "/services/trading-and-project-solutions", image: "/images/trading_solutions_hero.jpg" },
-      { name: "Portacabin & AV Solutions", href: "/services/portacabin-and-av-solutions", image: "/images/portacabin_av_hero.jpg" },
+      { name: "Portacabin", href: "/services/portacabin", image: "/images/portacabin_av_hero.jpg" },
+      { name: "AV Solutions", href: "/services/av-solutions", image: "/images/av_solutions_hero.jpg" },
     ]
   },
   { name: "Why Us", href: "/why-us" },
