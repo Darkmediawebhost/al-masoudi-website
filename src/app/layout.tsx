@@ -19,6 +19,13 @@ import type { Metadata, Viewport } from "next";
 export const metadata: Metadata = {
   title: "Al Masoudi Contracting & Trading Company",
   description: "Building Excellence. Trading Trust. A leading construction, contracting, and general trading company.",
+  openGraph: {
+    images: ["/images/thumbnail.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/images/thumbnail.png"],
+  },
 };
 
 export const viewport: Viewport = {
