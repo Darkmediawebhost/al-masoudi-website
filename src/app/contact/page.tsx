@@ -210,7 +210,7 @@ export default function ContactPage() {
                 <div className="mt-8 pt-8 border-t border-gray-100 flex items-center justify-between">
                   <span className="text-brand-gray font-semibold text-sm">Need immediate assistance?</span>
                   <a 
-                    href="https://wa.me/966590470783" 
+                    href="https://wa.me/966580430781" 
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center gap-2 text-green-600 font-bold hover:text-green-700 transition-colors"
