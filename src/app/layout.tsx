@@ -17,6 +17,7 @@ const sora = Sora({
 import type { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://masoudi-sa.com'),
   title: "Al Masoudi Contracting & Trading Company",
   description: "Building Excellence. Trading Trust. A leading construction, contracting, and general trading company.",
   openGraph: {
