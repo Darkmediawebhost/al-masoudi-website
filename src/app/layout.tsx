@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   title: "Al Masoudi Contracting & Trading Company",
   description: "Building Excellence. Trading Trust. A leading construction, contracting, and general trading company.",
   openGraph: {
-    images: ["/images/thumbnail.png"],
+    images: ["/images/thumbnail.jpg"],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/thumbnail.png"],
+    images: ["/images/thumbnail.jpg"],
   },
 };
 
