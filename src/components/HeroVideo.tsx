@@ -16,13 +16,13 @@ export function HeroVideo() {
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-contain md:object-cover object-center bg-black"
+          className="absolute inset-0 w-full h-full object-cover scale-[1.35] md:scale-100 object-center bg-black"
         >
           <source src="/images/Al%20Masoudi.mp4" type="video/mp4" />
         </video>
 
         {/* Watermark Cover - Angled Design Element */}
-        <div className="absolute bottom-[23%] mt-[-30px] left-0 z-20 md:hidden">
+        {/* <div className="absolute bottom-[23%] mt-[-30px] left-0 z-20 md:hidden">
           <div
             className="bg-[#D45903] text-white pl-4 pr-10 py-3 shadow-[0_10px_40px_rgba(212,89,3,0.5)] border-t border-r border-white/20 backdrop-blur-md"
             style={{ clipPath: 'polygon(0 0, 100% 0, 85% 100%, 0% 100%)' }}
@@ -34,7 +34,7 @@ export function HeroVideo() {
               </span>
             </div>
           </div>
-        </div>
+        </div> */}
       </motion.div>
 
 

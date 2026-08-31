@@ -86,15 +86,15 @@ export default function Home() {
 
 
       {/* About Preview */}
-      <section className="py-32 bg-white relative overflow-hidden">
+      <section className="py-12 md:py-32 bg-white relative overflow-hidden ">
         {/* Subtle dot pattern background */}
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#000 1.5px, transparent 1.5px)', backgroundSize: '32px 32px' }} />
         
         {/* Elegant glowing orb */}
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-orange/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
         
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-0">
+        <div className="container mx-auto px-4 relative z-10 ">
+          <div className="flex flex-col lg:flex-row items-center gap-6 md:gap-12 lg:gap-0">
             {/* Image Side */}
             <div className="w-full lg:w-1/2 relative z-0">
               <AnimatedReveal direction="right">
