@@ -43,14 +43,19 @@ export function Footer() {
               <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-brand-orange"></span>
             </h4>
             <ul className="space-y-3">
-              {['Home', 'About Us', 'Why Choose Us', 'Contact'].map((link) => (
-                <li key={link}>
+              {[
+                { label: 'Home', href: '/' },
+                { label: 'About Us', href: '/about' },
+                { label: 'Why Choose Us', href: '/why-us' },
+                { label: 'Contact', href: '/contact' },
+              ].map(({ label, href }) => (
+                <li key={label}>
                   <Link
-                    href={link === 'Home' ? '/' : `/${link.toLowerCase().replace(/ /g, '-')}`}
+                    href={href}
                     className="text-gray-400 hover:text-brand-orange transition-colors flex items-center gap-2"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-orange"></span>
-                    {link}
+                    {label}
                   </Link>
                 </li>
               ))}
